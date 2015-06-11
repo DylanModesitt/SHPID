@@ -1,0 +1,39 @@
+<HTML>
+<HEAD>
+	<TITLE>SHP ID Card Admin Page</TITLE>
+</HEAD>
+	<BODY>
+		<P>
+		    <FORM METHOD='post' ACTION='go.php'>
+		    Upload some people: 
+		    PDF file: <INPUT TYPE='file'>
+		    Text file: <INPUT TYPE='file'>
+		    <INPUT TYPE='submit' VALUE='Go!'>
+		    </FORM>
+		</P>
+		<P>
+		<script type="text/javascript" language="JavaScript">
+function AskAndSubmit(t)
+{
+  var answer = confirm("Are you sure you want to do this?");
+  if (answer)
+  {
+    t.form.submit();
+  }
+}
+</script>
+
+		    <FORM METHOD='post' ACTION='clear.php'>
+		    <INPUT TYPE='submit' VALUE='Clear the entire database'>
+			</FORM>
+		</P>
+	<P>
+		    <FORM METHOD='post' ACTION='email.php'>
+		    <INPUT TYPE='submit' VALUE='Email codes to all email addresses'>
+		    </FORM>
+		</P>
+
+
+		</P>
+	</BODY>
+</HTML>
